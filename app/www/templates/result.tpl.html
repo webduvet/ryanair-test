@@ -1,0 +1,19 @@
+<!--
+<ion-header-bar class="bar-positive">
+	<h1 class="title">Pick Airports</h1>
+</ion-header-bar>
+-->
+<ion-view view-title="Result">
+	<ion-content>
+		<ul class="list">
+			<li class="item item-button-right" ng-repeat="item in flightList">
+			<p>{{item.outbound.airportFrom.name}} - {{item.outbound.airportTo.name}} </p>
+			<p>{{item.outbound.dateFrom.substr(0,10)}} - {{item.outbound.dateTo.substr(0,10)}} </p>
+			<h3>{{cur}}{{item.outbound.price.value}}</h3>
+			<button class="button button-positive">
+				<i class="icon ion-ios-checkmark-empty"></i>
+			</button>
+			</li>
+		</ul>
+	</ion-content>
+</ion-view>
