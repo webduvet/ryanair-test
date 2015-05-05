@@ -6,11 +6,11 @@ describe('Controllers', function(){
 
     beforeEach(inject(function($rootScope, $controller) {
         scope = $rootScope.$new();
-        $controller('homeCtrl', {$scope: scope});
+        $controller('mainCtrl', {$scope: scope});
     }));
 
     // tests start here
-    it('should have enabled friends to be true', function(){
-        expect(scope.settings.enableFriends).toEqual(true);
+    it('should have  flights in scope', function(){
+        expect(scope.flights.maxprice).toEqual(0);
     });
 });
