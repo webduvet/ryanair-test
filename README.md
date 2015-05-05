@@ -20,10 +20,11 @@ open in new shell and execute
 
 ### install ionic app
 Unfortunatelly I was trying to be fancy and picked beta version of ionic.
-Besides it does not offer any out of box testing or linting, it also performs weirdly in safari
+After I realized it was not such a good idea, it performs weirdly in safari
 and its' modals polute $scope with properties like `direction` (of slide in) and god know what...
 however it is build on top of cordova and does all the cute stuff with iOS emulator and automatic 
 build for mobile platforms which looks very cool.
+
 
 `npm install -g cordova ionic`
 
@@ -33,4 +34,18 @@ build for mobile platforms which looks very cool.
   
 or test in browser
 
-`ionic serve`  
+`ionic serve` 
+
+### Testing
+
+`npm install - g karma-cli`
+
+`bower install`
+
+`karma start`
+
+there was some missmatch with paths in karma conf,
+
+TODO - I need to double check the paths in karma conf to make it happen
+
+
